@@ -1,0 +1,7 @@
+.main{
+    background-color: #FFFDFE;
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid red;
+}
