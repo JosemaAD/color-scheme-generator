@@ -1,7 +1,63 @@
+*{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #1A1919;
+}
+form{
+    margin: 30px 0;
+    vertical-align: middle;
+}
 .main{
     background-color: #FFFDFE;
     max-width: 750px;
     display: block;
     margin: 0 auto;
-    border: 1px solid red;
+}
+button, select, input[type=color]{
+    background: none;
+    border: 2px solid #1A1919;
+    min-height: 42px;
+    vertical-align: middle;   
+    text-transform: uppercase; 
+    text-transform: uppercase;
+    font-weight: 900;
+    font-weight: 900;
+    margin: 10px
+}
+button{
+    padding: 10px 30px;    
+    transition: 0.5s;
+}
+button:hover{
+    background: #1A1919;
+    color: #fff;
+}
+select{
+    padding: 10px;
+}
+select:focus-visible{
+    outline: none;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.child{
+    min-height: 550px;
+    display: block;
+}
+
+@media (max-width:495px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
